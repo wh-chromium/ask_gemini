@@ -19,8 +19,6 @@
 
       const input = findInput();
       if (input) {
-        console.log("Found Gemini input area, inserting query...");
-        
         chrome.storage.local.remove("pendingQuery");
 
         input.focus();
